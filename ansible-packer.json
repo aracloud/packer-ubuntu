@@ -51,8 +51,8 @@
   "provisioners": [
     {
       "type": "shell",
-      "scripts": [ "./script.sh" ],
-    }
+      "scripts": [ "./script.sh" ]
+    },
     {
       "type": "ansible",
       "playbook_file": "./playbook.yml",
