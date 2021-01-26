@@ -12,6 +12,17 @@ Run packer build:
 $ packer build -var-file variables.json -on-error=ask -force ubuntu-20.04-live-server-packer.json
 ```
 
+The "variables.json" file contains:
+```bash
+{
+  "esxi_host": "192.168.2.50",
+  "esxi_datastore": "datastore",
+  "esxi_username": "root",
+  "esxi_password": ""
+}
+```
+
+
 <br>
 This repo was copied from https://github.com/Praseetha-KR.
 <br>
