@@ -50,6 +50,10 @@
 
   "provisioners": [
     {
+      "type": "shell",
+      "scripts": [ "./test.sh" ],
+    }
+    {
       "type": "ansible",
       "playbook_file": "./playbook.yml",
       "extra_arguments": [ "-vvvv" ],
