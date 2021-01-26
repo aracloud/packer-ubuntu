@@ -12,7 +12,7 @@ Run packer build:
 $ packer build -var-file variables.json -on-error=ask -force ubuntu-20.04-live-server-packer.json
 ```
 
-The "variables.json" file contains:
+The "variables.json" file contains ESXi connection params needed by ...-packer.json:
 ```bash
 {
   "esxi_host": "<your esxi ip>",
@@ -28,6 +28,3 @@ This repo was copied from https://github.com/Praseetha-KR.
 <br>
 For more info: https://imagineer.in/blog/packer-build-for-ubuntu-20-04/
 
-## ESXi connection setup
-
-The file variables.json defines the ESXi connection setup params.
