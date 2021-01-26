@@ -50,8 +50,8 @@
 
   "provisioners": [
     {
-      "type": "shell",
-      "inline": ["ls /"]
+      "type": "ansible",
+      "playbook_file": ["./playbook.yml"]
     }
   ]
 }
