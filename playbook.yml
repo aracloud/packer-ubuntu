@@ -1,15 +1,11 @@
 ---
 # playbook.yml
 - name: 'Provision Image'
-  hosts: all
-  connection: ssh
-  gather_facts: yes
+  hosts: default
   become: yes
-  become_user: ubuntu
-  become_method: sudo
 
   tasks:
-    - name: install Apache
+    - name: install packages
       package:
-        name: 'httpd'
+        name: nginx
         state: present
