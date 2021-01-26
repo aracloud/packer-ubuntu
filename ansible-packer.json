@@ -29,7 +29,7 @@
       "ssh_password": "ubuntu",
       "ssh_pty": true,
       "ssh_timeout": "30m",
-      "ssh_handshake_attempts": "90",
+      "ssh_handshake_attempts": "100",
 
       "remote_type": "esx5",
       "remote_host": "{{user `esxi_host`}}",
