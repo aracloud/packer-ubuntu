@@ -15,10 +15,10 @@ $ packer build -var-file variables.json -on-error=ask -force ubuntu-20.04-live-s
 The "variables.json" file contains:
 ```bash
 {
-  "esxi_host": "192.168.2.50",
+  "esxi_host": "<your esxi ip>",
   "esxi_datastore": "datastore",
   "esxi_username": "root",
-  "esxi_password": ""
+  "esxi_password": "<your password>"
 }
 ```
 
