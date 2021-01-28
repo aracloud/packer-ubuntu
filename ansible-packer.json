@@ -5,7 +5,7 @@
 
       "guest_os_type": "ubuntu-64",
 
-      "name": "u-k8s-1",
+      "name": "ubuntu-20.04",
 
       "iso_urls": [
         "iso/ubuntu-20.04.1-live-server-amd64.iso",
