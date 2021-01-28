@@ -44,7 +44,7 @@
       },
 
       "vnc_disable_password": "true",
-      "disable_shutdown": "true"
+      "shutdown_command": "echo {{user `ssh_pass`}} | sudo -S shutdown -P now"
     }
   ],
 
