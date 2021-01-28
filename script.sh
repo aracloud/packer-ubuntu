@@ -5,7 +5,8 @@ sudo apt -y update
 sudo apt -y upgrade
 sudo apt -y install \
 software-properties-common \
-ansible
+ansible \
+net-tools
 
 # sudo apt-add-repository ppa:ansible/ansible -y
 

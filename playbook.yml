@@ -1,6 +1,6 @@
 ---
 # playbook.yml
-- name: 'Provision Image'
+- name: 'Provision VM'
   hosts: localhost
   become: yes
 
