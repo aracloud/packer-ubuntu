@@ -12,10 +12,10 @@
       "iso_checksum": "{{user `iso_checksum`}}",
 
       "http_directory": "subiquity/http",
-      "skip_export": "true",
-      "convert_to_template": "true",
+      "skip_export": "false",
+      "output_directory": "output/live-server",
 
-      "boot_wait": "1s",
+      "boot_wait": "5s",
       "boot_command": [
         "<enter><enter><f6><esc><wait> ",
         "autoinstall ds=nocloud-net;seedfrom=http://{{ .HTTPIP }}:{{ .HTTPPort }}/",
