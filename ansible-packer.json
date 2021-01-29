@@ -4,7 +4,7 @@
       "type": "vmware-iso",
       "name": "ubuntu-20.04",
 
-      "guest_os_type": "{{user `guest_os_type`}}",
+      "guest_os_type": "ubuntu-64",
       "iso_urls": [
         "{{user `iso_file`}}",
         "{{user `iso_url`}}"
@@ -13,8 +13,9 @@
 
       "http_directory": "subiquity/http",
       "skip_export": "true",
+      "convert_to_template": "true",
 
-      "boot_wait": "5s",
+      "boot_wait": "1s",
       "boot_command": [
         "<enter><enter><f6><esc><wait> ",
         "autoinstall ds=nocloud-net;seedfrom=http://{{ .HTTPIP }}:{{ .HTTPPort }}/",
