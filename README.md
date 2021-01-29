@@ -9,7 +9,7 @@
 Run packer build:
 
 ```bash
-$ packer build -var-file variables.json -on-error=ask -force ubuntu-20.04-live-server-packer.json
+$ packer build -var-file variables.json -on-error=ask -force ansible-packer.json
 ```
 
 The "variables.json" file contains ESXi connection params needed by ...-packer.json:
