@@ -1,8 +1,10 @@
 <div align="center">
     <img src="https://imagineer.in/assets/img/posts/packer-ubuntu.png" alt="logo" width="350px" style="margin-top: 1em">
     <h1>Packer for Ubuntu server for ESXi Lab Environments</h1>
-    <h4>Packer config to build ESXi guest from Ubuntu 20.04 server ISO file as a source.</h4>
-</div><br>
+    <h4>Packer config to build ESXi guest from Ubuntu 20.04 server ISO file as a source and
+        it will save the OVF package locally (output folder).</h4>
+</div>
+<br>
 
 ## Ubuntu 20.04 Server
 
