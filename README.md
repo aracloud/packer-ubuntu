@@ -13,12 +13,13 @@ Run packer build:
 $ packer build -var-file variables.json -on-error=ask -force ansible-packer.json
 ```
 <br>
-
+File ansible-packer.json:
 ```bash
       "skip_export": "false",
       "output_directory": "output/live-server",
 ```
  will save the OVF package locally (in the output folder)
+ when packer has finished the job.
 
  <br>
 
