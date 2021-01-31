@@ -24,7 +24,5 @@ The "variables.json" file contains ESXi connection params:
 
 
 <br>
-This repo was copied from https://github.com/Praseetha-KR.
-<br>
 For more info: https://imagineer.in/blog/packer-build-for-ubuntu-20-04/
 
