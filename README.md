@@ -12,7 +12,7 @@ Run packer build:
 $ packer build -var-file variables.json -on-error=ask -force ansible-packer.json
 ```
 
-The "variables.json" file contains ESXi connection params needed by ...-packer.json:
+The "variables.json" file contains ESXi connection params:
 ```bash
 {
   "esxi_host": "<your esxi ip>",
