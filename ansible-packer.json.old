@@ -2,7 +2,7 @@
   "builders": [
     {
       "type": "vmware-iso",
-      "name": "uk8s1",
+      "name": "ubuntu-20.04",
 
       "guest_os_type": "ubuntu-64",
       "iso_urls": [
@@ -12,50 +12,8 @@
       "iso_checksum": "{{user `iso_checksum`}}",
 
       "http_directory": "subiquity/http",
-      "skip_export": "true",
-
-      "boot_wait": "5s",
-      "boot_command": [
-        "<enter><enter><f6><esc><wait> ",
-        "autoinstall ds=nocloud-net;seedfrom=http://{{ .HTTPIP }}:{{ .HTTPPort }}/",
-        "<enter><wait>"
-      ],
-
-      "ssh_username": "ubuntu",
-      "ssh_password": "ubuntu",
-      "ssh_pty": true,
-      "ssh_timeout": "30m",
-      "ssh_handshake_attempts": "100",
-
-      "remote_type": "esx5",
-      "remote_host": "{{user `esxi_host`}}",
-      "remote_datastore": "{{user `esxi_datastore`}}",
-      "remote_username": "{{user `esxi_username`}}",
-      "remote_password": "{{user `esxi_password`}}",
-      "keep_registered": true,
-
-      "vmx_data": {
-        "numvcpus": "1",
-        "memsize": "1024",
-        "ethernet0.networkName": "VM Network"
-      },
-
-      "vnc_disable_password": "true",
-      "shutdown_command": "echo {{user `ssh_pass`}} | sudo -S shutdown -P now"
-    },
-    {
-      "type": "vmware-iso",
-      "name": "uk8s2",
-
-      "guest_os_type": "ubuntu-64",
-      "iso_urls": [
-        "{{user `iso_file`}}",
-        "{{user `iso_url`}}"
-      ],
-      "iso_checksum": "{{user `iso_checksum`}}",
-
-      "http_directory": "subiquity/http",
-      "skip_export": "true",
+      "skip_export": "false",
+      "output_directory": "output/live-server",
 
       "boot_wait": "5s",
       "boot_command": [
