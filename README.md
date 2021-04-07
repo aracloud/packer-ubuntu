@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://imagineer.in/assets/img/posts/packer-ubuntu.png" alt="logo" width="350px" style="margin-top: 1em">
+    <img src="https://raw.githubusercontent.com/aracloud/packer-ubuntu-esxi/main/blob/packer-ubuntu.png" alt="logo" width="350px" style="margin-top: 1em">
     <h1>Packer for Ubuntu server for ESXi Lab Environments</h1>
     <h4>Packer config to build ESXi guest from Ubuntu 20.04 server ISO file as a source.</h4>
 </div>
